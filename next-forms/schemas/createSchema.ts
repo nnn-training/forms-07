@@ -48,12 +48,14 @@ export const questionInputSchema = z.discriminatedUnion('questionType', [
 export type QuestionInputType = z.infer<typeof questionInputSchema>;
 
 // フォーム全体のスキーマ
-export const createFormSchema = z.object({
+export const baseFormSchema = z.object({
   formTitle: nonEmptyString('タイトル'),
   description: z
     .string()
     .max(255, { message: '説明は255文字以内で入力してください。' })
     .optional(),
+});
+export const createFormSchema = baseFormSchema.extend({
   questions: z
     .array(questionInputSchema)
     .min(1, { message: '質問を追加してください。' })
