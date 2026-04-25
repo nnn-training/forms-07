@@ -99,7 +99,7 @@ export default function EditForm(props: CurrentFormProps) {
           className="block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-full"
         />
         {errors.formTitle?.message && (
-          <p className="text-sm text-red">
+          <p className="text-sm text-red-500">
             {errors.formTitle?.message}
           </p>
         )}
@@ -109,7 +109,7 @@ export default function EditForm(props: CurrentFormProps) {
           className="block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-full"
         ></textarea>
         {errors.description?.message && (
-          <p className="validation-error-message">
+          <p className="text-sm text-red-500">
             {errors.description?.message}
           </p>
         )}

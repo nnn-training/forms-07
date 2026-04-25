@@ -118,7 +118,7 @@ export default function AnswerForm(props: Props) {
         </h3>
         {renderAnswerField()}
         {errors.answers?.[question.questionId] && (
-          <p className="text-sm text-red">
+          <p className="text-sm text-red-500">
             {errors.answers[question.questionId]?.message}
           </p>
         )}

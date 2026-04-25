@@ -39,7 +39,7 @@ export function ChoiceItem({
         </button>
       </div>
       {errors.choiceText?.message && (
-        <p className="text-sm text-red">{errors.choiceText.message}</p>
+        <p className="text-sm text-red-500">{errors.choiceText.message}</p>
       )}
     </>
   );

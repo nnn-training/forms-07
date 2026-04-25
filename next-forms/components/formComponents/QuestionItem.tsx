@@ -62,7 +62,7 @@ export default function QuestionItem({
               </button>
             </div>
             {errors.choices?.message && (
-              <p className="text-sm text-red">
+              <p className="text-sm text-red-500">
                 {errors.choices?.message}
               </p>
             )}
@@ -121,7 +121,7 @@ export default function QuestionItem({
         </button>
       </div>
       {errors.questionText?.message && (
-        <p className="text-sm text-red">
+        <p className="text-sm text-red-500">
           {errors.questionText.message}
         </p>
       )}
